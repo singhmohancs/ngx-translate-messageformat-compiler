@@ -1,6 +1,6 @@
 {
-  "name": "ngx-translate-messageformat-compiler-custom",
-  "version": "7.1.1",
+  "name": "ngx-translate-messageformat-compiler-tallyfy",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "build": "ng build",
