@@ -67,11 +67,12 @@ export class TranslateMessageFormatCompiler extends TranslateCompiler {
       result = this.getMessageFormatInstance(lang).compile(value);
     } catch (err) {
       if (this.throwOnError) {
-        throw err;
+        console.info(err);
+        return '' as Result;
       }
 
-      console.error(err);
-      console.error(
+      console.info(err);
+      console.info(
         `[ngx-translate-messageformat-compiler] Could not compile message for lang '${lang}': '${value}'`,
       );
       result = compileFallback(value, lang);
